@@ -54,7 +54,7 @@ for n=1:num_of_result
     for j = 1:max_iter
         %Calculate Fitness of X and Update Pbest and Gbest
         for i = 1:pop_size
-            F_result(1,i) = AOF(X(k,:),k);
+            F_result(1,i) = AOF(X(i,:),k);
             if (F_result(1,i) <= AOF(p_best(i,:),k))
                 p_best(i,:) = X(i,:);
             end
